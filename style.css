@@ -1,0 +1,816 @@
+:root {
+    --body-color-green: #35A930;
+    --body-color-black: #151515;
+    --body-color-light-blue: #0CBDDC
+}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#dis {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background-color: rgba(0,0,0,.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-body {
+    position: absolute;
+    top: 25%;
+    left:25%;
+    max-width: 50%;   
+    background-color: #fff;
+    border-radius: 5px;
+    border:1px solid grey;
+    overflow: hidden;
+z-index: 100;
+}
+
+ .popup-body {
+    padding: 25px 50px;
+    display: flex;
+    justify-content: center;
+}
+.modal-popup .popup-body .popup-content .popup-form input, .modal-popup .popup-body .popup-content .popup-form button {
+    padding: 15px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    margin: 15px 0px;
+}
+.modal-popup .popup-body .popup-content .popup-form input {
+    width: 85%;
+    border: 2px solid #e9eaf1;
+    background-color: #f5f7fa;
+    color: #a3a3a3;
+}
+.modal-popup .popup-body .popup-content .popup-form button {
+    cursor: pointer;
+    background-color: var(--body-color-light-blue);
+    border: 0px;
+    color: #fff;
+    
+      
+      
+}
+.modal-popup .popup-body .popup-profile .profile-content .profile-details p {
+    color: #a3a3a3;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+ 
+    .modal-popup {
+        width: 100%;
+    }
+    .modal-popup .popup-header {
+        padding: 50px 0px;
+    }
+   
+}
+
+
+body {
+    margin: 0;
+    min-height: 100%;
+    background-color: #e9f6f9;
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    line-height: 20px
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    height: 100%
+}
+
+.container {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 1440px;
+    
+    min-height: 30px;
+    margin-left: auto
+}
+
+.upper_section {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .head {
+    color: var(--body-color-black);
+    line-height: 30px;
+  }
+  
+  .paragraph {
+    max-width: 60%;
+  }
+.w-container {
+    max-width: 1540px
+}
+.calculator-hero-grid {
+    background-color: #fff;
+    border-radius: 20px;
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows:1000px; /* Change this value */
+    align-items: start;
+    grid-column-gap: 72px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5), 0 -1px 2px 0 rgba(0, 0, 0, .01);
+  }
+  
+.grey-horizontal-line {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin-left:40px ;
+margin-top: 10px;  
+}
+  
+.tabs-container {
+    display: flex;
+    flex-direction: row
+}
+
+.tab {
+    background-color: #f0f0f0;
+    padding: 15px 25px;
+    border-radius: 4px 0 0 4px;
+    cursor: pointer;
+    font-size: 20px; 
+    color: var(--body-color-black)
+}
+
+.tab.active {
+    background-color: var(--body-color-black);
+    color: #e0e4ea;
+    font-weight: 600;
+}
+
+.tab:not(:last-child) {
+    margin-right: 5px
+}
+
+.text-box {
+    max-width: 90%;
+    grid-column: 1/span 1
+}
+
+  /* .text-input,
+  .form-control {
+    margin-right: 5px; Adjust the margin as needed
+  } */
+  
+.calculator-result-grid {
+    max-width: 100% !important;
+    height: 1018px !important;
+    padding: 10px 90px;
+    background-color: var(--body-color-black);
+    grid-column: 2/span 1;
+    text-align: center;
+}
+.calculator-result-grid div.calculator-result-box{
+    margin: 84px 0px;
+}
+.c-white{
+    color: #fff;
+    font-weight: 200;
+}
+.font-h1 {
+    font-size: 2.9rem;
+    font-weight: 600;
+    line-height: 60px;
+}
+.loan-summary-disc {
+    margin: 30px 0;
+    border-bottom: 1px solid #474747;
+    border-top: 1px solid #474747;
+}
+
+.loan-summary-disc p {
+    color:#d4d3d3;
+}
+.w-layout-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto auto;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px
+}
+
+.section.calculator-hero {
+    overflow: hidden;
+    color: #f0f2f3
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+@media screen and (min-width:1280px) {
+    .section {
+        padding-bottom: 40px
+    }
+}
+
+.section {
+    position: relative;
+    z-index: 0;
+    padding-top: 35px;
+    padding-bottom: 80px
+}
+
+.spacer._16 {
+    width: 16px;
+    height: 16px;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    background-color: transparent
+}
+
+.spacer {
+    height: 48px;
+    background-color: #dee5eb
+}
+
+
+p {
+    margin-top: 0;
+    /* margin-bottom: 16px; */
+    opacity: .9;
+    font-size: 16px;
+    color: #e0e4ea;
+    line-height: 1.5em;
+    font-weight: 500
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0;
+    margin-inline-end: 0
+}
+
+.spacer._32 {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    background-color: transparent
+}
+
+.w-container:after,
+.w-container:before {
+    content: " ";
+    display: table;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-column-end: 2;
+    grid-row-end: 2
+}
+
+.calculator-inputs-grid {
+    margin: 60px 0
+}
+
+@media screen and (max-width:991px) {
+    .container {
+        padding-right: 30px;
+        padding-left: 30px
+    }
+
+    .calculator-hero-grid {
+        grid-row-gap: 32px;
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr
+    }
+
+    .text-box {
+        padding-left: 0 !important
+    }
+
+    .hero-background {
+        height: 105%
+    }
+}
+
+
+label, p{
+    margin-left: 70px;
+    color: #727272
+}
+.paragraph{
+    margin-left: 0px;
+
+}
+label {
+    color: var(--body-color-black);
+    font-size: 20px;
+    font-weight: 600
+}
+
+.amount_div {
+    width: 100%
+}
+.btn {
+    padding: 20px 45px;
+    background: #0cc0df;
+    border: 1px solid #FFFFFF;
+    color: #fff;
+    font-weight: 600;
+    font-size: 28px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto; /* Added margin to center horizontally */
+    display: block; /* Ensures the button is centered properly */
+  }
+  
+  .btn:hover {
+    background-color: #08a6c8;
+  }
+  
+  .inline-input {
+    display: inline-flex;
+    min-width: 95%;
+  }
+  input[type=text],
+  select {
+    height: 48px;
+    width: 85%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    margin-left: 70px;
+    border: 1px solid var(--body-color-light-blue);
+    color: #6d6d6d;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  select {
+    /* Additional styles for select element */
+    min-width: 20%;
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path d="M1.5 4.5l4 4 4-4" fill="none" stroke="#6d6d6d" stroke-width="1.5"/></svg>')
+      no-repeat;
+    background-position: right 8px center;
+    background-size: 12px;
+    padding-right: 10px;
+  }
+  
+
+/* .short-input{
+    width: 35% !important;
+} */
+.row_section{
+    display: flex;
+    flex-direction: row;
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none
+}
+
+input:focus {
+    outline: 0
+}
+
+.range {
+    background: linear-gradient(to right, var(--body-color-light-blue) 0, var(--body-color-light-blue) 50%, #ccc 50%, #ccc 100%);
+    border-radius: 8px;
+    height: 5px;
+    width: 85%;
+    outline: 0;
+    transition: background 450ms ease-in;
+    -webkit-appearance: none;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 22px;
+    width: 22px;
+    background: var(--body-color-light-blue);
+    margin-top: -4px;
+    border-radius: 50%;
+    border: 4px solid var(--body-color-light-blue);
+    box-shadow: 0 0 0 1px #c3c2c2;
+    cursor: pointer
+}
+
+input[type=range]::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 22px;
+    width: 22px;
+    background: var(--body-color-light-blue);
+    margin-top: -4px;
+    border-radius: 50%;
+    border: 4px solid var(--body-color-light-blue);
+    box-shadow: 0 0 0 1px #c3c2c2;
+    cursor: pointer
+}
+
+input::placeholder {
+    color: #a0a2a3;
+    font-family: sans-serif
+}
+
+a {
+    background-color: transparent;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+    color: #f1506b;
+    text-decoration: none
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 10px;
+    color: #b9bec3;
+    word-spacing: 0;
+    letter-spacing: 0
+}
+
+#txtEstimatedPurchasePrice {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    font-family: Ubuntu, sans-serif
+}
+
+@media screen and (max-width:1015px) {
+    .text-box{
+        min-width:97%;
+    }
+    .calculator-hero-grid {
+        display: flex;
+        flex-direction: column
+    }
+
+    .loan-summary-disc p{
+        margin-left: 0px;
+        padding: 0px 10px;
+    }
+    .calculator-result-grid {
+        min-width: 100% !important;
+        min-height: 1100px;
+        padding: 20px 30px;
+        border: 1px solid #f0f2f3;
+        border-radius: 5px
+    }
+
+    h3 {
+        line-height: 10px
+    }
+/* 
+    .text-box {
+        min-width: 700px
+    } */
+}
+
+@media screen and (max-width:815px) {
+    .calculator-result-grid {
+        padding: 5px 25px
+    }
+
+    h3 {
+        font-size: 30px
+    }
+    .paragraph {
+        max-width: 75%;
+        text-align: center;
+    }
+    .short-input , .range{
+    width: 65% !important;
+}
+
+}
+
+@media screen and (max-width:775px) {
+    .row_section{
+        display: flex;
+        flex-direction: column;
+    }
+    .short-input , .range{
+        width: 85% !important;
+    }
+
+
+    .text-box {
+        min-width: 600px
+    }
+
+}
+@media (max-width: 768px) {
+    .paragraph {
+      max-width: 100%;
+    }
+  }
+  
+@media screen and (max-width:675px) {
+    .calculator-hero-grid {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        margin-left: 0 !important
+    }
+
+    .text-box {
+        min-width: 500px
+    }
+
+    h3 {
+        font-size: 25px
+    }
+
+}
+
+@media screen and (max-width:620px) {
+    .text-box {
+        max-width: 100px !important
+    }
+
+    .calculator-inputs-grid {
+        display: flex;
+        flex-direction: column
+    }
+ 
+    .grey-horizontal-line{
+        display: none;
+    }
+   
+}
+
+@media screen and (max-width:582px) {
+    .popup-body {
+        padding: 25px 20px;
+        position: absolute;
+        top: 25%;
+        left:10%;
+        max-width: 80%;
+    }
+    .modal-popup .popup-body .popup-content .popup-form input {
+        width: 95%;
+    }
+
+    .modal-popup .popup-body .popup-content .popup-form button  {
+    display: block;
+    margin: 0 auto;
+   }
+    h3 {
+        line-height: 30px
+    }
+
+    p {
+        font-size: 14px
+    }
+
+    .text-box {
+        min-width: 400px !important
+    }
+    input[type=text] ,label, p , .range{
+       
+        margin-left: 50px;
+    }
+    .loan-summary-disc p{
+        margin-left: 0px;
+        padding: 0px 10px;
+    }
+    label{
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:492px) {
+ 
+    select {
+        /* Additional styles for select element */
+        min-width: 15%;
+        margin-left: 16%;
+    }    
+    h3 {
+        line-height: 30px;
+        font-size: 20px
+    }
+
+    p {
+        font-size: 14px
+    }
+
+    .tab {
+        padding:15px 30px;
+    }
+    .text-box {
+        
+        min-width: 330px !important
+    }
+
+    .calculator-result-grid {
+        min-width: 70%;
+        padding: 5px 10px
+    }
+}
+
+@media screen and (max-width:430px)
+{
+ 
+    .tab {
+        padding:15px 32px;
+    }
+    .text-box {
+        
+        min-width: 280px !important
+    }   
+    input[type=text] ,label, p , .range{
+       
+        margin-left: 45px;
+    }
+
+}
+
+@media screen and (max-width:375px)
+{
+    .btn {
+        padding: 15px 25px;
+     
+    }
+    .inline-input {
+        display: inline-flex;
+        max-width: 70%;
+    }
+    .text-box {
+        min-width: 280px !important
+    }
+    input[type=text] ,label, p , .range , select{
+       
+        margin-left:   25px;
+    }
+}
+@media screen and (max-width:350px)
+
+{
+    .tab {
+        padding:10px 15px;
+        font-size: 14px;
+    }
+    .font-h1 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 20px;
+    }
+    input[type=text] ,label, p , .range{
+       
+        margin-left: 25px;
+    }  
+}
+
+
+@media screen and (max-width:345px)
+
+{
+    .tab {
+        padding:10px 12px;
+        font-size: 14px;
+    }
+    .font-h1 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 20px;
+    }
+    input[type=text] ,label, p , .range{
+       
+        margin-left: 20px;
+    }  
+
+input[type=text] {
+    height: 45px;
+    width: 85%;
+}
+.text-box {
+        
+    min-width: 260px !important
+}   
+}
+
+
+@media screen and (max-width:320px)
+
+{
+    .font-h1 {
+        font-size: 2rem;
+    }
+    .tab {
+        padding:10px 5px;
+    }
+
+    input[type=text] ,label, p , .range , select{
+       
+        margin-left: 10px;
+    }  
+
+input[type=text] {
+    height: 45px;
+    width: 85%;
+}
+.text-box {
+        
+    min-width: 230px !important
+}   
+label{
+    font-size: 14px;
+}
+}
+@media screen and (max-width:290px)
+{
+    .text-box {
+        
+        min-width: 210px !important
+    }  
+    label{
+        font-size: 13px;
+    }
+
+    .font-h1 {
+        font-size: 1.8rem;
+    }
+    .container {
+        padding-right: 10px;
+        padding-left: 10px
+    }
+
+}
+
+body{
+    font-weight:300;
+    /*max-width:500px;*/
+    margin:0 auto;
+  }
+  
+  h2{
+    margin: 40px 0;
+  }
+  
+  .input-area{
+    max-width:70%;
+    margin:0 auto;  
+  }
+  
+  label{
+    margin-top:20px;
+  }
+  
+  select{
+    max-width:90px;
+  }
+  
+  .card{
+    max-width:70%;
+    margin:0 auto;
+    margin:20px auto;
+    display:none;
+  }
+  .card-img-top{
+    width:100%;
+    height:auto;
+  }
+  
